@@ -1,0 +1,64 @@
+---
+title       : Data Science Specilization Course Rating App
+author      : Ritesh Gandhi
+job         : Programmer
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## About App
+
+
+Data Science Specilization rating app collects user rating and feedback and provides the Average rating for the Specilization tracks based on number of ratings provided for the course.
+
+App
+  - Collects User rating in the scale of 1-5 (5 being the best)
+  - Provides Average rating of the Course once use submit the ratings
+  - Plots histogram for ratings
+
+--- .class #id 
+
+## Input Values Required for App
+
+
+User need to fill in following details in App.
+
+1. First Name
+2. Last Name
+3. Rating in the scale of 1 to 5 (5 being the best)
+4. Feedback
+
+User need to click on submit button after he fills up details
+
+--- .class #id
+
+## Output Values in App
+
+
+App will display following information once user provides the rating and submit the details.
+
+1. Rating being entered by User
+2. Feedback provided for the course
+3. Average Rating of the course based on number of ratings provided by various users
+
+--- .class #id
+
+## How the Calculation is performed in the App
+
+#### Calculation 
+1. App reads the input rating provided by the user
+2. It updates the user rating in the comma seperated CSV files
+3. It extracts all the rating from CSV file and calculates the mean of rating
+4. Display the results in the App
+
+#### Sample Calculation
+Lets Say there are 5 users provided the rating 3,4,5,5,2 then
+Average rating will be
+```{r}
+mean(c(3,4,5,5,2))
+```
+** End of Slides.. Thank you for browsing through app! **
